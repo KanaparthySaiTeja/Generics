@@ -1,11 +1,11 @@
 public class Generics {
     public static void main(String[] args) {
 
-        System.out.println(findMax(5,8,12));
+        System.out.println(findMax(5.1f,8.2f,12.5f));
     }
 
-    public static Integer findMax (Integer a,Integer b,Integer c) {
-        Integer max=a;
+    public static Float findMax (Float a,Float b,Float c) {
+        Float max=a;
         if(b.compareTo(max)>0){
             max=b;
         }

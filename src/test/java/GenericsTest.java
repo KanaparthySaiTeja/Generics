@@ -5,20 +5,20 @@ public class GenericsTest {
 Generics genObj=new Generics();
 @Test
     public void firstTest(){
-    Integer maximum=genObj.findMax(12,4,8);
-        Assert.assertSame(12,maximum);
+    Float maximum=genObj.findMax(12.5f,4.6f,8.3f);
+        Assert.assertEquals(12.5f,maximum,0.0000);
 
 }
     @Test
     public void secondTest(){
-        Integer maximum=genObj.findMax(4,12,8);
-            Assert.assertSame(12,maximum);
+        Float maximum=genObj.findMax(4.6f,12.5f,8.3f);
+            Assert.assertEquals(12.5f,maximum,0.0000);
 
     }
     @Test
     public void thirdTest(){
-        Integer maximum=genObj.findMax(4,8,12);
-            Assert.assertSame(12,maximum);
+        Float maximum=genObj.findMax(4.6f,8.3f,12.5f);
+            Assert.assertEquals(12.5f,maximum,0.000);
 
     }
 }
